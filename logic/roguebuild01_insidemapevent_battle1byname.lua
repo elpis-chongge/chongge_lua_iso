@@ -1,0 +1,30 @@
+require("RogueBuild01_InsideMapEvent_LineDotByName")
+
+function GetRogueBuild01_InsideMapEvent_Battle1Uis(ui)
+  local uis = {}
+  uis.NameTxt = ui:GetChild("NameTxt")
+  uis.WordTxt = ui:GetChild("WordTxt")
+  uis.TipsTxt = ui:GetChild("TipsTxt")
+  uis.Light1_1 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Light1_1"))
+  uis.Light2_1 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Light2_1"))
+  uis.Light2_2 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Light2_2"))
+  uis.Light3_1 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Light3_1"))
+  uis.Light3_2 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Light3_2"))
+  uis.Light3_3 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Light3_3"))
+  uis.Right1_1 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Right1_1"))
+  uis.Right2_1 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Right2_1"))
+  uis.Right2_2 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Right2_2"))
+  uis.Right3_1 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Right3_1"))
+  uis.Right3_2 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Right3_2"))
+  uis.Right3_3 = GetRogueBuild01_InsideMapEvent_LineDotUis(ui:GetChild("Right3_3"))
+  uis.c2Ctr = ui:GetController("c2")
+  uis.c3Ctr = ui:GetController("c3")
+  uis.Light1Ctr = ui:GetController("Light1")
+  uis.Light2Ctr = ui:GetController("Light2")
+  uis.Light3Ctr = ui:GetController("Light3")
+  uis.Right1Ctr = ui:GetController("Right1")
+  uis.Right2Ctr = ui:GetController("Right2")
+  uis.Right3Ctr = ui:GetController("Right3")
+  uis.root = ui
+  return uis
+end

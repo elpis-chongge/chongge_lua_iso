@@ -1,0 +1,31 @@
+require("Battle_TimeByName")
+require("Battle_WaveByName")
+require("Battle_AutoByName")
+require("Battle_IntegralByName")
+require("Battle_BuffAddTagByName")
+require("Battle_BossBattleTipsByName")
+require("Battle_BurstRegionByName")
+require("Battle_BurstCardHeadRegionByName")
+require("Battle_TopLeftByName")
+require("Battle_StopByName")
+require("Battle_HangUpWindowByName")
+
+function GetBattle_BattleUIUis(ui)
+  local uis = {}
+  uis.Time = GetBattle_TimeUis(ui:GetChild("Time"))
+  uis.Wave = GetBattle_WaveUis(ui:GetChild("Wave"))
+  uis.Auto = GetBattle_AutoUis(ui:GetChild("Auto"))
+  uis.Integral = GetBattle_IntegralUis(ui:GetChild("Integral"))
+  uis.BuffAddTag = GetBattle_BuffAddTagUis(ui:GetChild("BuffAddTag"))
+  uis.BossBattleTips = GetBattle_BossBattleTipsUis(ui:GetChild("BossBattleTips"))
+  uis.BurstRegion = GetBattle_BurstRegionUis(ui:GetChild("BurstRegion"))
+  uis.BurstCardHeadRegion = GetBattle_BurstCardHeadRegionUis(ui:GetChild("BurstCardHeadRegion"))
+  uis.TopLeft = GetBattle_TopLeftUis(ui:GetChild("TopLeft"))
+  uis.Stop = GetBattle_StopUis(ui:GetChild("Stop"))
+  uis.HangUpWindow = GetBattle_HangUpWindowUis(ui:GetChild("HangUpWindow"))
+  uis.c1Ctr = ui:GetController("c1")
+  uis.BustCtr = ui:GetController("Bust")
+  uis.BuffAddCtr = ui:GetController("BuffAdd")
+  uis.root = ui
+  return uis
+end

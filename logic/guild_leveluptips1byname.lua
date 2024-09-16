@@ -1,0 +1,10 @@
+function GetGuild_LevelUpTips1Uis(ui)
+  local uis = {}
+  
+  uis.TitleTxt = ui:GetChild("TitleTxt")
+  uis.SubtitleTxt = ui:GetChild("SubtitleTxt")
+  uis.LevelTxt = ui:GetChild("LevelTxt")
+  uis.LevelNameTxt = ui:GetChild("LevelNameTxt")
+  uis.root = ui
+  return uis
+end

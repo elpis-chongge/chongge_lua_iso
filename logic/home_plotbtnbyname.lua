@@ -1,0 +1,12 @@
+require("Home_NewByName")
+
+function GetHome_PlotBtnUis(ui)
+  local uis = {}
+  uis.NameTxt = ui:GetChild("NameTxt")
+  uis.SubtitleTxt = ui:GetChild("SubtitleTxt")
+  uis.Red = GetHome_NewUis(ui:GetChild("Red"))
+  uis.buttonCtr = ui:GetController("button")
+  uis.lockCtr = ui:GetController("lock")
+  uis.root = ui
+  return uis
+end

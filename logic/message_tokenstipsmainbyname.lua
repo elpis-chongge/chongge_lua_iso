@@ -1,0 +1,30 @@
+require("Message_TokensItemPicByName")
+require("Message_ItemNumberByName")
+require("Message_DiscountByName")
+require("Message_TokensPrice1ByName")
+require("Message_TokensHaveNumberByName")
+require("Message_NumberStripByName")
+require("Message_TokensBuyByName")
+
+function GetMessage_TokensTipsMainUis(ui)
+  local uis = {}
+  uis.ItemPic = GetMessage_TokensItemPicUis(ui:GetChild("ItemPic"))
+  uis.DetailsBtn = ui:GetChild("DetailsBtn")
+  uis.ItemNumber = GetMessage_ItemNumberUis(ui:GetChild("ItemNumber"))
+  uis.Discount = GetMessage_DiscountUis(ui:GetChild("Discount"))
+  uis.InfoList = ui:GetChild("InfoList")
+  uis.NameTxt = ui:GetChild("NameTxt")
+  uis.Price = GetMessage_TokensPrice1Uis(ui:GetChild("Price"))
+  uis.HaveNumber = GetMessage_TokensHaveNumberUis(ui:GetChild("HaveNumber"))
+  uis.WordList = ui:GetChild("WordList")
+  uis.NumberStrip = GetMessage_NumberStripUis(ui:GetChild("NumberStrip"))
+  uis.Buy = GetMessage_TokensBuyUis(ui:GetChild("Buy"))
+  uis.StarList = ui:GetChild("StarList")
+  uis.numberCtr = ui:GetController("number")
+  uis.saleCtr = ui:GetController("sale")
+  uis.c3Ctr = ui:GetController("c3")
+  uis.c4Ctr = ui:GetController("c4")
+  uis.c1Ctr = ui:GetController("c1")
+  uis.root = ui
+  return uis
+end

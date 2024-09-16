@@ -1,0 +1,31 @@
+require("Shop_CardHeadBgByName")
+require("Shop_DiscountByName")
+require("Shop_OriginalPriceByName")
+require("Shop_UseMarkByName")
+require("Shop_TokenTipsTimeByName")
+
+function GetShop_TokenTipsBtnUis(ui)
+  local uis = {}
+  uis.CardHead = GetShop_CardHeadBgUis(ui:GetChild("CardHead"))
+  uis.NameTxt = ui:GetChild("NameTxt")
+  uis.Decorate1Txt = ui:GetChild("Decorate1Txt")
+  uis.StarList = ui:GetChild("StarList")
+  uis.ItemLoader = ui:GetChild("ItemLoader")
+  uis.ItemNumberTxt = ui:GetChild("ItemNumberTxt")
+  uis.PriceLoader = ui:GetChild("PriceLoader")
+  uis.PriceTxt = ui:GetChild("PriceTxt")
+  uis.BuyTimesTxt = ui:GetChild("BuyTimesTxt")
+  uis.Discount = GetShop_DiscountUis(ui:GetChild("Discount"))
+  uis.OriginalPriceTxt = GetShop_OriginalPriceUis(ui:GetChild("OriginalPriceTxt"))
+  uis.UseMark = GetShop_UseMarkUis(ui:GetChild("UseMark"))
+  uis.Time = GetShop_TokenTipsTimeUis(ui:GetChild("Time"))
+  uis.buttonCtr = ui:GetController("button")
+  uis.c1Ctr = ui:GetController("c1")
+  uis.c2Ctr = ui:GetController("c2")
+  uis.c3Ctr = ui:GetController("c3")
+  uis.numberCtr = ui:GetController("number")
+  uis.c4Ctr = ui:GetController("c4")
+  uis.timeCtr = ui:GetController("time")
+  uis.root = ui
+  return uis
+end
